@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Ishan73744/aurelmark",
+  "title": "Aurelmark",
+  "description": "Official sanctions list changes (OFAC, UK, EU) and EU data: deadlines, CBAM, EUDR, contract winners",
+  "version": "0.4.7",
+  "websiteUrl": "https://aurelmark.live/docs",
+  "repository": { "url": "https://github.com/Ishan73744/aurelmark-mcp", "source": "github" },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aurelmark.live/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional: Bearer <Aurelmark API key>. Metered normal routes include 10 successful keyless answers/day; unmetered routes are unlimited. Keys retain their prepaid-credit policy. No MCP payment flow; exhausted free calls return the HTTP alternative.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
